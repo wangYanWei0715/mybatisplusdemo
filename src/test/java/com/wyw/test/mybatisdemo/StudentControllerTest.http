@@ -1,0 +1,30 @@
+### Send POST request with json body
+POST http://localhost:8080/student/savestudent
+Content-Type: application/json
+
+{
+    "name":"tom",
+    "age":18,
+    "hobbyies":[
+        "打篮球","乒乓球","排球"
+    ]
+}
+
+###
+
+POST http://localhost:8080/student/updatestudent
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"tom",
+    "hobbyies":[
+        "打篮球1","乒乓球1","排球1"
+    ]
+}
+
+###
+GET http://localhost:8080/student/selectstudentbyid?id=1
+Accept: application/json
+
+###
